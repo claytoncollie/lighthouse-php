@@ -296,7 +296,6 @@ class Lighthouse
             $this->lighthousePath,
             $this->outputFormat,
             $this->headers,
-            '--quiet',
             "--config-path={$this->configPath}",
             $url,
         ], $this->processOptions());
