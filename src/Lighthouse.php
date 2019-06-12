@@ -7,7 +7,7 @@ use Symfony\Component\Process\Process;
 
 class Lighthouse
 {
-    protected $timeout = 600;
+    protected $timeout = 300;
     protected $nodePath = null;
     protected $chromePath = null;
     protected $lighthousePath = 'lighthouse';
