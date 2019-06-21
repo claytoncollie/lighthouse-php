@@ -101,9 +101,10 @@ class Lighthouse
                                    $this->headers,
                                    "--config-path={$this->configPath}",
                                    '--no-enable-error-reporting',
-                                   '"' . $url . '"',
                                ],
-                               $this->processOptions());
+                               $this->processOptions(),
+                               ['"' . $url . '"']
+        );
 
         return implode(' ', array_filter($command));
     }
