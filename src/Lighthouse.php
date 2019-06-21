@@ -100,7 +100,8 @@ class Lighthouse
                                    $this->outputFormat,
                                    $this->headers,
                                    "--config-path={$this->configPath}",
-                                   $url,
+                                   '--no-enable-error-reporting',
+                                   '"' . $url . '"',
                                ],
                                $this->processOptions());
 
